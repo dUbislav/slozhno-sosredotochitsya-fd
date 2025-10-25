@@ -80,6 +80,10 @@
   gap: 11.5px;
 }
 
+.header__theme-menu-button:hover {
+  border: solid 1px var(--nav-hover-color);
+}
+
 .header__theme-menu-button {
   background-color: transparent;
   border: none;
@@ -90,10 +94,6 @@
   color: var(--nav-color);
   border: 1px solid transparent;
   padding: 1.5px 13px;
-}
-
-.header__theme-menu-button:hover {
-  border: solid 1px var(--nav-hover-color);
 }
 
 .header__theme-menu-button:focus {
