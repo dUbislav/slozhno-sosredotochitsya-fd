@@ -9,13 +9,14 @@
   --main-title-color: #353430;
   --main-text-color: #353430;
   --title-bg-color: #FF8DCB;
+  --link-color: #353430;
 }
 
 .theme-light .header__rec {
   display: none;
 }
 
-@media (prefers-color-scheme: light) { 
+@media (prefers-color-scheme: light) {
   :root {
     --main-bg-color: #FFF1F7;
     --bg-image: url('../images/cover-image-light.png');
@@ -27,6 +28,7 @@
     --main-title-color: #353430;
     --main-text-color: #353430;
     --title-bg-color: #FF8DCB;
+    --link-color: #353430;
   }
   .theme-light .header__rec {
     display: none;

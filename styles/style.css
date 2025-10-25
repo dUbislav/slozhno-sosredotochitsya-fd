@@ -93,7 +93,7 @@
 }
 
 .header__theme-menu-button:hover {
-  box-shadow: 0 0 0 1px var(--nav-hover-color);
+  border: solid 1px var(--nav-hover-color);
 }
 
 .header__theme-menu-button:focus {
@@ -187,6 +187,18 @@
   text-shadow: 2px 2px var(--accent-color);
 }
 
+.text-link:focus {
+  outline: none;
+}
+
+.text-link:focus-visible {
+  outline: solid 1px var(--link-color);
+}
+
+.text-link:hover {
+  text-decoration: underline var(--link-color);
+}
+
 .gallery-title {
   margin-bottom: var(--main-gap);
 }
@@ -234,7 +246,7 @@
   }
 
   .header__info {
-    justify-self: end; 
+    justify-self: end;
     grid-row: 3;
     grid-column: 2;
     width: calc(100% - 7px);
@@ -310,7 +322,7 @@
 }
 
 @media (width >=1024px) {
-  .focus-decor{
+  .focus-decor {
     grid-template-columns: 32.42% 65.62%;
     gap: 20px;
   }
@@ -330,7 +342,7 @@
     flex-direction: row;
     gap: 10px;
     margin-top: -3px;
-    margin-right: -15px;    
+    margin-right: -15px;
   }
 
   .focus-decor:nth-child(even) .card-container {
