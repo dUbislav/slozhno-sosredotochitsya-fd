@@ -22,7 +22,7 @@
 }
 
 @media (prefers-color-scheme: light) { 
-  :root{
+  :root {
     --main-bg-color: #FFF1F7;
     --bg-image: url('../images/cover-image-light.png');
     --nav-color: #FF8DCB;
