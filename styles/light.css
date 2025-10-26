@@ -1,7 +1,7 @@
 :root.theme-light {
   --main-bg-color: #FFF1F7;
   --bg-image: url('../images/cover-image-light.png');
-  --nav-color: #FF8DCB;
+  --nav-color: #353430;
   --nav-hover-color: #32312D66;
   --accent-color: #FF8DCB;
   --header-text-color: #FFC2E6;
@@ -10,6 +10,7 @@
   --main-text-color: #353430;
   --title-bg-color: #FF8DCB;
   --link-color: #353430;
+  --title-content-color: #353430;
 }
 
 .theme-light .header__rec {
@@ -20,7 +21,7 @@
   :root {
     --main-bg-color: #FFF1F7;
     --bg-image: url('../images/cover-image-light.png');
-    --nav-color: #FF8DCB;
+    --nav-color: #353430;
     --nav-hover-color: #32312D66;
     --accent-color: #FF8DCB;
     --header-text-color: #FFC2E6;
@@ -29,8 +30,9 @@
     --main-text-color: #353430;
     --title-bg-color: #FF8DCB;
     --link-color: #353430;
+    --title-content-color: #353430;
   }
-  .theme-light .header__rec {
+  .header__rec {
     display: none;
   }
 }

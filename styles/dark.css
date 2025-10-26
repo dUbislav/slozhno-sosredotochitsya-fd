@@ -9,6 +9,7 @@
   --accent-color: #FF0070;
   --header-text-color: #DB00FF;
   --footer-text-color: #DB00FF;
+  --title-content-color: #FF0070;
 }
 
 .theme-dark .header__rec {
