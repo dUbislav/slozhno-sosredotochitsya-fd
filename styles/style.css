@@ -10,6 +10,7 @@
 }
 
 .header {
+  block-size: 100vh;
   min-block-size: 668px;
   display: grid;
   grid-template-columns: 1fr;
@@ -44,7 +45,6 @@
 
 .decorated-zone {
   position: relative;
-  block-size: 100vh;
 }
 
 .decorated-zone::before {
@@ -118,16 +118,16 @@
   text-shadow:4px 4px 0px var(--accent-color);
 }
 
-.smaller-title{
-  font-weight: 400;
-}
-
 .title-decor {
   background-color: var(--title-bg-color);
   font-size: var(--main-text-size);
   font-family: var(--main-font-family);
   color: var(--main-title-color);
   font-weight: 700;
+}
+
+.title-decor.smaller-title {
+  font-weight: 400;
 }
 
 .main__info {
@@ -137,13 +137,7 @@
   gap: 50px;
 }
 
-.content-classic {
-  display: grid;
-  grid-template-rows: auto-fit;
-  gap: 20px;
-}
-
-.content-landscape {
+.content-section {
   display: grid;
   grid-template-rows: auto-fit;
   gap: 20px;
@@ -212,11 +206,12 @@
   width: 100%;
 }
 
-.footer__focus {
+.footer {
+  block-size: 100vh;
+  min-block-size: 668px;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-block-size: 100vh;
   font-family: var(--main-font-family);
   font-size: var(--footer-text-size);
   color: var(--footer-text-color);
@@ -227,8 +222,6 @@
 
 @media (width >= 768px) {
   .content-landscape {
-    grid-template-columns: 32.42% 64.84%;
-    grid-template-rows: min-content 1fr;
     grid-template-areas: 
       "title ."
       "cards cards";
@@ -266,11 +259,14 @@
   }
 
   .content-classic {
-    grid-template-columns: 32.42% 64.84%;
-    grid-template-rows: min-content 1fr;
     grid-template-areas:
       "title cards"
       ". cards"
+  }
+
+  .content-section{
+    grid-template-columns: 32.42% 64.84%;
+    grid-template-rows: min-content 1fr;
   }
 
   .card-container {
@@ -336,7 +332,7 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
-  
+
   .header__theme-menu {
     grid-column: 1 /span 2;
     align-self: start;
